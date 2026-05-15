@@ -5,7 +5,9 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
-import Counter from "./components/LessonFour/Counter.tsx";
+import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import Counter from "./components/LessonFour/Counter.tsx";
+// import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
 function App() {
 
@@ -34,7 +36,9 @@ function App() {
 
         {/*Lesson 4*/}
         <Layout addClasses="bg-gray-50">
-            <Counter/>
+            {/*<Counter/>*/}
+            {/*<ClassCounter/>*/}
+            <CounterAdvanced/>
         </Layout>
 
     </>
