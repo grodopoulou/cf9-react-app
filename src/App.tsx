@@ -5,6 +5,7 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
+import Counter from "./components/LessonFour/Counter.tsx";
 
 function App() {
 
@@ -22,13 +23,20 @@ function App() {
         {/*    description="lorem20"*/}
         {/*/>*/}
 
-        <Layout >
-            {/*<ArrowFunctionalComponentWithProps*/}
-            {/*    title="Second Title"*/}
-            {/*    description ="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."*/}
-            {/*/>*/}
-            <p className="text-red-700">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        {/*Lesson 3*/}
+        {/*<Layout addClasses="bg-gray-50">*/}
+        {/*    <ArrowFunctionalComponentWithProps*/}
+        {/*        title="Second Title"*/}
+        {/*        description ="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."*/}
+        {/*    />*/}
+        {/*    <p className="text-red-700">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>*/}
+        {/*</Layout>*/}
+
+        {/*Lesson 4*/}
+        <Layout addClasses="bg-gray-50">
+            <Counter/>
         </Layout>
+
     </>
   )
 }
