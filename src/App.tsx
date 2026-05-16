@@ -5,7 +5,8 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
-import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+import NameChanger from "./components/LessonFive/NameChanger.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
@@ -35,12 +36,16 @@ function App() {
         {/*</Layout>*/}
 
         {/*Lesson 4*/}
-        <Layout addClasses="bg-gray-50">
+        {/*<Layout addClasses="bg-gray-50">*/}
             {/*<Counter/>*/}
             {/*<ClassCounter/>*/}
-            <CounterAdvanced/>
-        </Layout>
+        {/*    <CounterAdvanced/>*/}
+        {/*</Layout>*/}
 
+        {/*Lesson 5*/}
+        <Layout addClasses="bg-gray-50">
+            <NameChanger/>
+        </Layout>
     </>
   )
 }
