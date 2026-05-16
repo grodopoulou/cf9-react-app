@@ -1,14 +1,11 @@
 import {useState} from "react";
 import CounterButton from "./CounterButton.tsx";
+import type {CounterState} from "../../types.ts";
 
-type CounterState = {
-    counter: number
-    lastAction: string
-    time: string
-}
+
 
 const initialState = {
-    counter: 0,
+    count: 0,
     lastAction: "",
     time: "",
 }
@@ -20,16 +17,16 @@ const CounterAdvanced = () => {
 
     const increaseCount = () => {
         setState({
-            counter: state.counter + 1,
+            count: state.count + 1,
             lastAction: "Increase",
             time: getCurrentTime(),
         })
     }
 
     const decreaseCount = () => {
-        if (state.counter > 0) {
+        if (state.count > 0) {
             setState({
-                counter: state.counter - 1,
+                count: state.count - 1,
                 lastAction: "Decrease",
                 time: getCurrentTime(),
             })
@@ -38,7 +35,7 @@ const CounterAdvanced = () => {
 
     const resetCount = () => {
         setState({
-            counter: 0,
+            count: 0,
             lastAction: "Reset",
             time: getCurrentTime(),
         })
@@ -47,7 +44,7 @@ const CounterAdvanced = () => {
     return (
         <>
             <h1 className="text-center text-xl font-bold"
-            >Count is {state.counter}</h1>
+            >Count is {state.count}</h1>
             <div className="text-center space-x-4 pt-12">
                 <CounterButton
                     onClick={increaseCount}
@@ -56,13 +53,13 @@ const CounterAdvanced = () => {
                 <CounterButton
                     onClick={decreaseCount}
                     label="Decrease"
-                    disabled={state.counter === 0}
+                    disabled={state.count === 0}
                 />
                 <CounterButton
                     addClasses="bg-cf-dark-red"
                     onClick={resetCount}
                     label="Reset"
-                    disabled={state.counter === 0}
+                    disabled={state.count === 0}
                 />
             </div>
             {
