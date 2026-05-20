@@ -5,7 +5,8 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
-import FocusInput from "./components/LessonSix/FocusInput.tsx";
+import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
+// import FocusInput from "./components/LessonSix/FocusInput.tsx";
 // import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
 // import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
 // import WindowSize from "./components/LessonSix/WindowSize.tsx";
@@ -69,7 +70,8 @@ function App() {
             {/*<AutoRedirect/>*/}
             {/*<AutoRedirectAdvanced/>*/}
             {/*<WindowSize/>*/}
-            <FocusInput/>
+            {/*<FocusInput/>*/}
+            <PreviousValue/>
         </Layout>
     </>
   )
