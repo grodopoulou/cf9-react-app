@@ -5,7 +5,8 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
-import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
+// import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
+import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import NameChanger from "./components/LessonFive/NameChanger.tsx";
 // import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
@@ -63,8 +64,8 @@ function App() {
 
         {/*Lesson 6*/}
         <Layout addClasses="bg-gray-50">
-            <AutoRedirect/>
-
+            {/*<AutoRedirect/>*/}
+            <AutoRedirectAdvanced/>
         </Layout>
     </>
   )
