@@ -5,11 +5,22 @@
 
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
+import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import NameChanger from "./components/LessonFive/NameChanger.tsx";
-import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+// import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
+// import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
+// import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+// import {useEffect} from "react";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
+
+
+// function setup() {
+//     alert("count")
+// }
+// useEffect(setup, [count])
+
 
 function App() {
 
@@ -44,9 +55,16 @@ function App() {
         {/*</Layout>*/}
 
         {/*Lesson 5*/}
+        {/*<Layout addClasses="bg-gray-50">*/}
+        {/*    <NameChanger/>*/}
+        {/*    <CounterWithCustomHook/>*/}
+        {/*    <NameChangerWithTitle/>*/}
+        {/*</Layout>*/}
+
+        {/*Lesson 6*/}
         <Layout addClasses="bg-gray-50">
-            {/*<NameChanger/>*/}
-            <CounterWithCustomHook/>
+            <AutoRedirect/>
+
         </Layout>
     </>
   )
