@@ -82,8 +82,8 @@ const MultiFieldForm = () => {
                 <>
                 <div className="mt-6 pt-4 max-w-md mx-auto border-t space-y-2">
                     <p><strong>Name:</strong>{submittedData.name}</p>
-                    <p><strong>Name:</strong>{submittedData.email}</p>
-                    <p><strong>Name:</strong>{submittedData.message}</p>
+                    <p><strong>Email:</strong>{submittedData.email}</p>
+                    <p><strong>Message:</strong>{submittedData.message}</p>
                 </div>
                 </>
             )}
